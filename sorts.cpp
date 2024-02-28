@@ -6,10 +6,15 @@
 #include <bits/stdc++.h> 
 #include <iostream>
 using namespace std; 
+
+// Global variables for counters for recursive sorts
+global_heap_counter = 0;
+global_merge_counter = 0;
   
 // Function for Selection sort 
 void selectionSort(int arr[], int n) 
 { 
+    int counter = 0; // Counter for comparing the sorts
     int i, j, min_idx; 
   
     // One by one move boundary of 
@@ -20,6 +25,8 @@ void selectionSort(int arr[], int n)
         // unsorted array 
         min_idx = i; 
         for (j = i + 1; j < n; j++) { 
+
+            counter++; // Incrementing the counter
             if (arr[j] < arr[min_idx]) 
                 min_idx = j; 
         } 
@@ -29,6 +36,7 @@ void selectionSort(int arr[], int n)
         if (min_idx != i) 
             swap(arr[min_idx], arr[i]); 
     } 
+    return counter; // returning the counter
 } 
   
 
@@ -41,11 +49,13 @@ void selectionSort(int arr[], int n)
 
 void bubbleSort(int arr[], int n)
 {
+    int counter = 0;
     int i, j;
     bool swapped;
     for (i = 0; i < n - 1; i++) {
         swapped = false;
         for (j = 0; j < n - i - 1; j++) {
+            counter++; // Incrementing the counter
             if (arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
                 swapped = true;
@@ -57,6 +67,7 @@ void bubbleSort(int arr[], int n)
         if (swapped == false)
             break;
     }
+    return counter; // returning the counter
 }
  
 
