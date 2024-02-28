@@ -1,7 +1,10 @@
+// CMPS-5243-270 - Algorithm Analysis
+// Swaraj Chirumamilla
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <random>
+using namespace std;
 
 void fillArrays(int arr1[], int arr2[], int arr3[], int arr4[], int size) {
     for (int i = 0; i < size; ++i) {
