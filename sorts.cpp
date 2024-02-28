@@ -38,10 +38,7 @@ void selectionSort(int arr[], int n)
 
 // Optimized implementation of Bubble sort
 // Source: https://www.geeksforgeeks.org/bubble-sort/
-#include <bits/stdc++.h>
-using namespace std;
- 
-// An optimized version of Bubble Sort
+
 void bubbleSort(int arr[], int n)
 {
     int i, j;
@@ -70,8 +67,7 @@ void bubbleSort(int arr[], int n)
 // C++ program for implementation of Heap Sort
 // Source: https://www.geeksforgeeks.org/heap-sort/
  
-#include <iostream>
-using namespace std;
+
  
 // To heapify a subtree rooted with node i
 // which is an index in arr[].
@@ -134,8 +130,6 @@ void heapSort(int arr[], int N)
 
 // C++ program for Merge Sort
 // Source: https://www.geeksforgeeks.org/merge-sort/
-#include <bits/stdc++.h>
-using namespace std;
  
 // Merges two subarrays of array[].
 // First subarray is arr[begin..mid]
