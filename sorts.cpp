@@ -117,7 +117,7 @@ void heapify(int arr[], int N, int i)
 // Main function to do heap sort
 void heapSort(int arr[], int N)
 {
- 
+    global_heap_counter++; // Increment global counter
     // Build heap (rearrange array)
     for (int i = N / 2 - 1; i >= 0; i--)
         heapify(arr, N, i);
@@ -205,7 +205,8 @@ void merge(int array[], int const left, int const mid,
 // begin is for left index and end is right index
 // of the sub-array of arr to be sorted
 void mergeSort(int array[], int const begin, int const end)
-{
+{   
+    global_merge_counter++; // Increment global counter
     if (begin >= end)
         return;
  
