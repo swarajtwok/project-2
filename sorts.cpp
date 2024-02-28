@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std; 
 
-// Global variables for counters for recursive sorts
+// Declaring Global variables for counters for recursive sorts
 global_heap_counter = 0;
 global_merge_counter = 0;
   
