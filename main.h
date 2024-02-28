@@ -43,14 +43,6 @@ void runSortingAlgorithm(int size) {
     int totalComparisons = 0;
     double totalTime = 0;
 
-    // Initial sorting on a small array (size 10)
-    fillArrays(arr1, arr2, arr3, arr4, 10);
-    int comparisonsSmallArray = 0;
-    double timeSmallArray = measureTime(arr1, 10, comparisonsSmallArray);
-
-    std::cout << "Sorting on a small array (size 10):" << std::endl;
-    std::cout << "Time: " << timeSmallArray << " seconds" << std::endl;
-    std::cout << "Comparisons: " << comparisonsSmallArray << std::endl << std::endl;
 
     // Sorting over a range from 1,000 to 7,000 in increments of 1,000
     for (int run = 0; run < 10; ++run) {
