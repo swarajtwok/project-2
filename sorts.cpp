@@ -4,6 +4,7 @@
 // selection sort 
 // Source: https://www.geeksforgeeks.org/selection-sort/
 #include <bits/stdc++.h> 
+#include <iostream>
 using namespace std; 
   
 // Function for Selection sort 
@@ -30,28 +31,7 @@ void selectionSort(int arr[], int n)
     } 
 } 
   
-// Function to print an array 
-void printArray(int arr[], int size) 
-{ 
-    int i; 
-    for (i = 0; i < size; i++) { 
-        cout << arr[i] << " "; 
-        cout << endl; 
-    } 
-} 
-  
-// Driver program 
-int main() 
-{ 
-    int arr[] = { 64, 25, 12, 22, 11 }; 
-    int n = sizeof(arr) / sizeof(arr[0]); 
-  
-    // Function Call 
-    selectionSort(arr, n); 
-    cout << "Sorted array: \n"; 
-    printArray(arr, n); 
-    return 0; 
-} 
+
 
 
 
@@ -82,24 +62,6 @@ void bubbleSort(int arr[], int n)
     }
 }
  
-// Function to print an array
-void printArray(int arr[], int size)
-{
-    int i;
-    for (i = 0; i < size; i++)
-        cout << " " << arr[i];
-}
- 
-// Driver program to test above functions
-int main()
-{
-    int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
-    int N = sizeof(arr) / sizeof(arr[0]);
-    bubbleSort(arr, N);
-    cout << "Sorted array: \n";
-    printArray(arr, N);
-    return 0;
-}
 
 
 
@@ -165,26 +127,6 @@ void heapSort(int arr[], int N)
     }
 }
  
-// A utility function to print array of size n
-void printArray(int arr[], int N)
-{
-    for (int i = 0; i < N; ++i)
-        cout << arr[i] << " ";
-    cout << "\n";
-}
- 
-// Driver's code
-int main()
-{
-    int arr[] = { 12, 11, 13, 5, 6, 7 };
-    int N = sizeof(arr) / sizeof(arr[0]);
- 
-    // Function call
-    heapSort(arr, N);
- 
-    cout << "Sorted array is \n";
-    printArray(arr, N);
-}
 
 
 
@@ -268,27 +210,3 @@ void mergeSort(int array[], int const begin, int const end)
     merge(array, begin, mid, end);
 }
  
-// UTILITY FUNCTIONS
-// Function to print an array
-void printArray(int A[], int size)
-{
-    for (int i = 0; i < size; i++)
-        cout << A[i] << " ";
-    cout << endl;
-}
- 
-// Driver code
-int main()
-{
-    int arr[] = { 12, 11, 13, 5, 6, 7 };
-    int arr_size = sizeof(arr) / sizeof(arr[0]);
- 
-    cout << "Given array is \n";
-    printArray(arr, arr_size);
- 
-    mergeSort(arr, 0, arr_size - 1);
- 
-    cout << "\nSorted array is \n";
-    printArray(arr, arr_size);
-    return 0;
-}
