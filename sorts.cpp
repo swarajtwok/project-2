@@ -104,7 +104,7 @@ int main()
 
 
 
-// Below are the 2 algorithms with O(n logn) time complexity
+// Below are the 2 algorithms with O(n logn) time complexity; Heap Sort and Merge Sort
 // C++ program for implementation of Heap Sort
 // Source: https://www.geeksforgeeks.org/heap-sort/
  
